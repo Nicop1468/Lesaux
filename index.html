@@ -99,7 +99,7 @@
 <body>
     <div class="card">
         <div class="profile-placeholder">BL</div>
-        <h2>LeSaux Benjamin</h2>
+        <h2>Le Saux Benjamin</h2>
         <h3>Commercial Itinérant - Klima Riv'Air</h3>
         <a class="button" href="tel:07 86 90 32 83">
             <i class="fa-solid fa-phone"></i> 07 86 90 32 83
@@ -124,7 +124,7 @@
                     reader.readAsDataURL(blob);
                     reader.onloadend = function () {
                         const base64Data = reader.result.split(",")[1];
-                        const vCardData = `BEGIN:VCARD\nVERSION:3.0\nN:LeSaux;Benjamin\nFN:Benjamin LeSaux\nORG:Klima Riv'Air\nTITLE:Commercial Sédentaire\nTEL;TYPE=cell:0786903283\nEMAIL:commercial@klima-rivair.fr\nURL:https://klima-rivair.fr\nADR;TYPE=work:;;62 impasse de lespinasse;31140;Aucamville\nPHOTO;ENCODING=b;TYPE=JPEG:${base64Data}\nEND:VCARD`;
+                        const vCardData = `BEGIN:VCARD\nVERSION:3.0\nN:Le Saux;Benjamin\nFN:Benjamin Le Saux\nORG:Klima Riv'Air\nTITLE:Commercial Sédentaire\nTEL;TYPE=cell:0786903283\nEMAIL:commercial@klima-rivair.fr\nURL:https://klima-rivair.fr\nADR;TYPE=work:;;62 impasse de lespinasse;31140;Aucamville\nPHOTO;ENCODING=b;TYPE=JPEG:${base64Data}\nEND:VCARD`;
                         const vCardEncoded = encodeURIComponent(vCardData);
                         const vCardBlob = `data:text/vcard;charset=utf-8,${vCardEncoded}`;
                         const link = document.createElement("a");
